@@ -1,0 +1,42 @@
+<div class="container-fluid">
+    <div class="row about-section">
+        <div class="col-lg-4 about-card" data-aos="fade-up-right" id="home">
+            <h3 class="font-weight-light">Quién soy ?</h3>
+            <span class="line mb-5"></span>
+            <h5 class="mb-3">{{ocupacion}}</h5>
+            <p class="mt-20">¡Hola a todos! Soy Brandon Moreno, un peleador de Artes Marciales Mixtas (MMA)
+                originario
+                de
+                Tijuana, México. Comencé mi carrera en las MMA en 2011 y desde entonces he luchado en varias
+                organizaciones
+                destacadas, incluyendo el UFC. Gané el Campeonato de Peso Mosca de UFC en 2021. Estoy emocionado por
+                compartir
+                mi viaje y experiencias en este blog.</p>
+        </div>
+        <div class="col-lg-4 about-card" data-aos="zoom-in">
+            <h3 class="font-weight-light">Información personal</h3>
+            <span class="line mb-5"></span>
+            <ul class="mt40 info list-unstyled">
+                <li *ngFor="let info of infoPersonal"><span>{{info.campo}}</span> : {{info.valor}}</li>
+            </ul>
+            <ul class="social-icons pt-3">
+                <li class="social-item"><a class="social-link" href="#"><i class="ti-facebook"
+                            aria-hidden="true"></i></a>
+                </li>
+                <li class="social-item"><a class="social-link" href="#"><i class="ti-twitter"
+                            aria-hidden="true"></i></a>
+                </li>
+                <li class="social-item"><a class="social-link" href="#"><i class="ti-instagram"
+                            aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-4 about-card" data-aos="fade-up-left">
+            <h3 class="font-weight-light">Estadisticas</h3>
+            <span class="line mb-5"></span>
+            <ul class="mt40 info list-unstyled">
+                <li *ngFor="let info of estadisticas"><span>{{info.campo}}</span> : {{info.valor}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
